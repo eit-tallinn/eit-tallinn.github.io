@@ -1,0 +1,24 @@
+title: EIT Digital Cities Summer School - Tallinn 2018
+greeting: EIT Digital Cities Summer School - Tallinn 2018
+description: Here you will find a link to all the presentations that were made at the EIT 2018 Digital Cities Summer School.
+footer_description: This website is built using Jekyll for the EIT Digital Cities Summer School in Tallinn 2018
+baseurl:
+#theme: Default
+
+
+# Nav bar
+navigation:
+  - title: Presentations
+    url: /presentations/
+  - title: Blog
+    url: /blog/
+    
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  
+  # Exclude these files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock

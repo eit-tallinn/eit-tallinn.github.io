@@ -1,0 +1,12 @@
+presentation_fields:
+- field_name: title
+  label: Title
+- field_name: presenter
+  label: Presenter
+- field_name: date
+  label: Date Presented
+- field_name: preview_image
+  label: Image URL
+- field_name: presentation_description
+  label: Presentation Description
+  

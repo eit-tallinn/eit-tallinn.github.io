@@ -1,0 +1,49 @@
+---
+title: Presentations
+layout: default
+permalink: /presentations/
+---
+{% include breadcrumbs.html %}
+
+<h1>Presentations</h1>
+<br>
+
+<div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+">
+    
+    {% assign sortpresentations = site.presentations | sort:"date" | reverse %}
+    {% for presentation in sortpresentations %}
+
+    <div
+        class="panel panel-default"
+        style="
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        "
+    >
+        <div class="panel-body">
+           <a href="{{ site.url }}/download/{{ presentation.title }}.ppt">
+                <div style="
+                    height: 180px;
+                    background-image: url({{ presentation.preview_image }});
+                    background-size: cover;
+                "></div>
+                <h3>{{ presentation.title }}</h3>
+            </a>
+            <p>{{ presentation.presentation_description }}</p>
+        </div>
+        <div class="panel-footer">
+            {{ presentation.presenter }} / {{ presentation.date }}
+        </div>
+    </div>
+{% endfor %}
+
+</div>
+
+
+
+    
