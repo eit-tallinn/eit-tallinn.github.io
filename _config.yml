@@ -22,3 +22,4 @@ kramdown:
 exclude:
   - Gemfile
   - Gemfile.lock
+
